@@ -17,3 +17,5 @@ public class PartTime : Employee
         Debug.Log(employeeName + "gets a salary this month of " + monthySalary);
     }
 }
+
+

@@ -18,7 +18,7 @@ public class WeaponStats
     }
 }
 
-public class Player : MonoBehaviour, IDamagable, IHealable
+public class Player : MonoBehaviour, IDamagable<float>, IHealable
 {
     
     private WeaponStats _plasmaRifle;
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour, IDamagable, IHealable
 
     public float Speed { get; private set; }
 
-    public int Health { get; set; }
+    public float Health { get; set; }
 
 
     // Start is called before the first frame update
@@ -67,7 +67,7 @@ public class Player : MonoBehaviour, IDamagable, IHealable
         }
     }
 
-    public void Damage(int damageAmount)
+    public void Damage(float damageAmount)
     {
         Health -= damageAmount;
     }

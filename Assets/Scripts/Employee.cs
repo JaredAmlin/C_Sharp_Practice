@@ -7,4 +7,5 @@ public abstract class Employee : MonoBehaviour
     public string companyName, employeeName;
 
     public abstract void CalculateMonthlySalary();
-}
+}       
+

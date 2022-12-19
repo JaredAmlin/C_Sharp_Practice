@@ -56,14 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PartTime.cs" />
+    <Compile Include="Assets\Scripts\FullTime.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Points.cs" />
     <Compile Include="Assets\Scripts\FCUmanager.cs" />
     <Compile Include="Assets\Scripts\Difficulty.cs" />
     <Compile Include="Assets\Scripts\Potion.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\Employee.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Customer.cs" />
+    <Compile Include="Assets\Scripts\SongNameDisplay.cs" />
     <Compile Include="Assets\Scripts\UtilityHelper.cs" />
     <Compile Include="Assets\Scripts\ItemDatabase.cs" />
     <Compile Include="Assets\Scripts\CoffeeTime.cs" />
@@ -71,6 +75,8 @@
     <Compile Include="Assets\Scripts\StructExample.cs" />
     <Compile Include="Assets\Scripts\EnemyBehavior.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
+    <Compile Include="Assets\Scripts\MossGiant.cs" />
+    <Compile Include="Assets\Scripts\IDamagable.cs" />
     <Compile Include="Assets\Scripts\Dog.cs" />
     <Compile Include="Assets\Scripts\Duck.cs" />
     <Compile Include="Assets\Scripts\TipCalculator.cs" />
@@ -78,16 +84,16 @@
     <Compile Include="Assets\Scripts\Pet.cs" />
     <Compile Include="Assets\Scripts\QuizCalculator.cs" />
     <Compile Include="Assets\PlayerAsset\Player.cs" />
+    <Compile Include="Assets\Scripts\DelegateManager.cs" />
     <Compile Include="Assets\Scripts\CustomerDatabase.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\FederalCreditUnion.cs" />
+    <Compile Include="Assets\Scripts\IHealable.cs" />
     <Compile Include="Assets\Scripts\BankManager.cs" />
     <Compile Include="Assets\Scripts\Bank.cs" />
-    <Compile Include="Assets\Scripts\Employee.cs" />
-    <Compile Include="Assets\Scripts\FullTime.cs" />
-    <Compile Include="Assets\Scripts\PartTime.cs" />
-    <Compile Include="Assets\Scripts\IDamagable.cs" />
-    <Compile Include="Assets\Scripts\IHealable.cs" />
+    <Compile Include="Assets\Scripts\NewColor.cs" />
+    <Compile Include="Assets\Scripts\UseGravity.cs" />
+    <Compile Include="Assets\Scripts\Teleport.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -17,3 +17,5 @@ public class FullTime : Employee
         Debug.Log(employeeName + " gets a monthy salary of " + monthlySalary);
     }
 }
+
+
