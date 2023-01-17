@@ -41,6 +41,8 @@ public class DelegateManager : MonoBehaviour
 
     private WaitForSeconds _completedWaitTime = new WaitForSeconds(5f);
 
+
+
     private void Start()
     {
         onColorChange = UpdateColor;

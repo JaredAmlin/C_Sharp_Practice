@@ -9,10 +9,11 @@ public class Item
     public string itemName;
     public string itemDescription;
     public Sprite ItemIcon;
+    public int buffValue;
 
     public enum ItemType
     {
-        Weapon, Consumable, Armor, Currency
+        Weapon, Consumable, Armor, Currency, Generic
     }
 
     public ItemType itemType;

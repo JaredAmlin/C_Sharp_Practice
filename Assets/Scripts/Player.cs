@@ -57,6 +57,15 @@ public class Player : MonoBehaviour, IDamagable<float>, IHealable
         Player player2 = new Player();
         Player player3 = new Player();
         Player player4 = new Player();
+
+        if (GameManager.Instance != null)
+            GameManager.Instance.GameOver();
+
+        if (UIManager.Instance != null)
+            UIManager.Instance.UpdatePoints(25);
+
+        if (SpawnManager.Instance != null)
+            SpawnManager.Instance.SpawnEmeny();
     }
 
     private void Update()
@@ -64,6 +73,14 @@ public class Player : MonoBehaviour, IDamagable<float>, IHealable
         if (Input.GetKeyDown(KeyCode.Space))
         {
             UtilityHelper.ChangeColor(this.gameObject, Color.green);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            //request projectile
+            GameObject projectile = PoolManager.Instance.RequestProjectile();
+            //fire projectile from player position
+            projectile.transform.position = this.transform.position;
         }
     }
 
